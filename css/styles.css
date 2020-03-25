@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Index */
+body {
+    background-image: url("../img/bosque-oscuro.jpg");
+    background-size: cover;
+    background-position: 10% 50%;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 10% 10% auto 10% 5% 5%;
+    grid-template-rows: 10% 10% auto 10% 10%;
+}
+
+body div {
+    padding: 1%;
+    margin: auto;
+    width: 100%;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body .bar {
+    width: 100%;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    display: flex;
+}
+
+body div div {
+    margin: auto;
+    padding: 1%;
+}
+
+body div div div {
+    display: felx;
+    justify-content: center;
+}
+
+body div div h1 {
+    font-weight: bold;
+    color: white;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+body div div div button {
+    width: 80%;
+    padding: 1% 1%;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgba(71, 71, 71, 0.5);
+    border-radius: 1em;
+}
+
+body div div div button:active {
+    background-color: rgba(124, 124, 124, 0.5);
+}
+
+body div div a {
+    width: 100%;
+}
+
+body div div a .next {
+    width: 40%;
+    padding: 1%;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    background-color: rgba(0, 129, 0, 0.5);
+    border-radius: 1em;
+}
+
+body div div a .next:active {
+    background-color: rgba(0, 182, 0, 0.5);
+}
+
+body div div a .back {
+    width: 40%;
+    margin-top: 1%;
+    padding: 1%;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    background-color: rgba(63, 63, 63, 0.5);
+    border-radius: 1em;
+}
+
+body div div a .back:active {
+    background-color: rgba(124, 124, 124, 0.5);
+}
+
+body div div .array-buttons button {
+    width: 10%;
+    padding: 2% 2%;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgba(71, 71, 71, 0.5);
+    border-radius: 1em;
+    justify-content: flex-start;
+}
+
+body div .progress {
+    display: flex;
+    justify-content: flex-start;
+}
+
+body div .progress-bar {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    margin: -1%;
+    padding: 2%;
+}
+
+body #bar {
+    padding: 1%;
+    margin: auto;
+    width: 100%;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    display: flex;
+}
+
+body #bar p {
+    color: white;
+}
+
+body #bar .progress {
+    padding: 0;
+    border-radius: 1em;
+    display: flex;
+    justify-content: flex-start;
+}
+
+body #bar .progress-bar {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    margin: 0%;
+    padding: 5%;
+}
