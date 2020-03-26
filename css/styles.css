@@ -19,10 +19,8 @@ body div {
     padding: 1%;
     margin: auto;
     width: 100%;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -32,10 +30,8 @@ body div {
 
 body .bar {
     width: 100%;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    grid-column-start: 4;
-    grid-column-end: 5;
+    grid-row: 4 / 5;
+    grid-column: 4 / 5;
     display: flex;
 }
 
@@ -58,7 +54,7 @@ body div div h1 {
 
 body div div div button {
     width: 80%;
-    padding: 1% 1%;
+    padding: 1%;
     color: white;
     font-size: large;
     font-weight: bold;
@@ -68,6 +64,10 @@ body div div div button {
 
 body div div div button:active {
     background-color: rgba(124, 124, 124, 0.5);
+}
+
+body div div div button:focus {
+    background-color: rgba(124, 124, 124, 0.8);
 }
 
 body div div a {
@@ -155,4 +155,23 @@ body #bar .progress-bar {
     align-items: flex-start;
     margin: 0%;
     padding: 5%;
+}
+
+@media screen and (max-width: 1024px)
+{
+    body div {
+        grid-column: 2 / 5;
+    }
+
+    body div div .array-buttons button {
+        width: 20%;
+    }
+
+    body div div a .next {
+        width: 50%;
+    }
+
+    body #bar .progress-bar {
+        padding: 15%;
+    }
 }
